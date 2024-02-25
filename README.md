@@ -20,11 +20,6 @@ WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
 http://localhost:8080/swagger-ui.html#
 ```
 
-
-
-        userClickRepository.save(anUserClick().userClickKey(anUserClickKey().withUserName(userName).withClickTime(new Date()).build())
-        .tiny(tiny).longUrl(tinyRequest.getLongUrl()).build());
-```
-commit - with cassandra
+Enjoy!
 
 
