@@ -1,6 +1,15 @@
 # tinyurl
 REST API web service written in Spring-Boot (Java), allows users to short URLs, monitor, track after them, and see statistics.
 
+# Tools
+### Databases:
+- Redis
+- MongoDB
+- Cassandra
+### Container
+- Docker
+
+
 ## How To Run
 1. Clone the project
 ```
