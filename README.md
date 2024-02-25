@@ -1,26 +1,23 @@
 # tinyurl
+REST API web service written in Spring-Boot (Java), allows users to short URLs, monitor, track after them, and see statistics.
 
-sudo vi /etc/hosts
+## How To Run
+1. Clone the project
 ```
-127.0.0.1 cassandra
-127.0.0.1 redis
-127.0.0.1 mongo
+git clone git@github.com:roee-tal/tiny-url.git
 ```
-### swagger
-pom.xml
-<br>
-<version>   </version> -> <version>2.5.2</version>
+3. Go to the project directory - use docker compose (make sure you have docker installed)
 ```
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.6.1</version>
-		</dependency><!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.6.1</version>
-		</dependency>
+docker-compose up -d
+```
+4. To create cassandra key space you may need to run this command before on the cassandra machine
+```
+CREATE KEYSPACE tiny_keyspace
+WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1};
+```
+5. After starting the server you can use the swagger on this adress:
+```
+http://localhost:8080/swagger-ui.html#
 ```
 
 
