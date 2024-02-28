@@ -3,9 +3,9 @@ REST API web service written in Spring-Boot (Java), allows users to short URLs, 
 
 # Tools
 ### Databases:
-- Redis
-- MongoDB
-- Cassandra
+- Redis: Mapping the long URL to a short one.
+- MongoDB: For users management.
+- Cassandra: For clicks statistics.
 ### Container
 - Docker
 
