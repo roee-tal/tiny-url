@@ -1,11 +1,14 @@
-# tinyurl
+# TinyURL
 REST API web service written in Spring-Boot (Java), allows users to short URLs, monitor, track after them, and see statistics.
 
 # Tools
 ### Databases:
-- Redis: Mapping the long URL to a short one.
-- MongoDB: For users management.
-- Cassandra: For clicks statistics.
+- ### Redis:
+   Mapping the long URL to a short one.
+- ### MongoDB:
+   For users management.
+- ### Cassandra:
+   For clicks statistics.
 ### Container
 - Docker
 
